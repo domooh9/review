@@ -1,0 +1,9 @@
+.loader{
+    padding: 4rem 0;
+    color: aqua;
+    font-style: italic;
+  
+}
+.loader img{
+    width: 120px;
+}
