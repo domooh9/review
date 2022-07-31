@@ -1,0 +1,15 @@
+.header-content{
+    min-height: 100vh;
+    background: linear-gradient(rgba(210, 175, 221, 0.3), rgba(33, 30, 34, 0.5)), url("../../images/bot.jpg") center/cover no-repeat;
+    flex-direction: column;
+}
+.header-title{
+    font-size: 4.2rem;
+    color: #171738;
+}
+.header-text{
+    margin-top: -1.8rem;
+    margin-bottom: 2.8rem;
+    opacity: 0.8;
+    max-width: 770px;
+}
