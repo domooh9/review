@@ -1,20 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import Fetch from './fetch';
 import "./About.css";
 
+
+
 const About = () => {
-  const [posts, setPosts] = useState([]);
-  const fetchPost = async () => {
-  const response = await fetch(
-      "http://localhost:8004/docs"
-    );
-   const data = await response.json();
-    setPosts(data);
-  };
-
-  useEffect(() => {
-    fetchPost();
-  }, []);
-
+  
   return (
     <section className='about'>
       <div className='container'>
@@ -33,11 +24,11 @@ const About = () => {
         <div className='formdata'>
         <form>
   <input className='inpt' type="text" name="name" />
-    <button className='btn' type="submit" onClick={fetchPost}> Comment</button> 
+    <button className='btn' type="submit" > Comment</button> 
 </form>
-<p>{posts.value}</p>
-        </div>
-        
+<Fetch />
+  </div>
+     
       </div>
     </section>
   )
