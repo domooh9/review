@@ -1,6 +1,7 @@
 import React from 'react';
 import Fetch from './fetch';
 import "./About.css";
+import PostData from './PostData';
 
 
 
@@ -12,6 +13,7 @@ const About = () => {
         <div className='section-title'>
           <h2>About</h2>
           <p className='fs-17'>Search any book of your choice by inserting the title of the book in the Search and wait for response.</p>
+          <p> You can leave a comment below to help us improve fuctionalities</p>
           
         </div>
 
@@ -22,11 +24,9 @@ const About = () => {
          
         </div>
         <div className='formdata'>
-        <form>
-  <input className='inpt' type="text" name="name" />
-    <button className='btn' type="submit" > Comment</button> 
-</form>
+ <PostData />
 <Fetch />
+
   </div>
      
       </div>

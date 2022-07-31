@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
+
 const UrL = ("http://localhost:8004/docs")
 
 function Fetch() {
@@ -7,8 +8,7 @@ function Fetch() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [docs, setItems] = useState([]);
 
-
-      useEffect(() => {
+    useEffect(() => {
         fetch(UrL)
           .then(res => res.json())
           .then(
@@ -23,6 +23,7 @@ function Fetch() {
             }
           )
       }, [])
+
     
       if (error) {
         return <div>Error: {error.message}</div>;
@@ -33,13 +34,17 @@ function Fetch() {
 
 
   return ( 
-    <div>
+    <div >
+        
 {docs.map(doc => (
-          <p key={doc.id}>
-           comment: {doc.comment} {doc.content}
+          <p className='inputs' key={doc.id}>
+           comment: {doc.comment} {doc.content} 
             </p>
+            
+          
 ))}
-    </div>
+
+   </div>
     
  
 
