@@ -12,6 +12,8 @@
        3. Check if the book you are looking for is part of the books displayed.
        4. open the book and using by directing the pointer at it.
        5. Check its description.
+       6. Check comments of previous user.
+       7. Add your comments
 
  ## setUp/Installation requirements
 
@@ -21,13 +23,14 @@ There are two ways of running the App:
        Navigate into the Apps directory.
        In the terminal type `npm start` to open the App in your browser or
       Open [http://localhost:3000](http://localhost:3000) to view it in your browser directly.
+      
 
     2.
 
 ## Technologies used
  
  1. React
- 2. APIs
+ 2. APIs(POST, GET request)
 
  ## Support and contact
      For any further clarrification and support contact:
