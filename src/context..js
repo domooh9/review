@@ -9,7 +9,7 @@ const AppProvider = ({children}) => {
     const [loading, setLoading] = useState(true);
     const [resultTitle, setResultTitle] = useState("");
 
-    const URL = "http://openlibrary.org/search.json?title=";
+    const URL = "https://openlibrary.org/search.json?title=";
     const fetchBooks = useCallback(async() => {
         setLoading(true);
         try{
