@@ -66,8 +66,8 @@ function Fetch() {
     <>
       <div className="abt">
        <form onSubmit={handleSubmit}>
-        <input onChange={(e) => setData(e.target.value)} className="int" placeholder="name.." value={data} />
-  <input onChange={(e) => setDocs(e.target.value)} className='inpt' placeholder="add comment.." value={info} />
+        <input onChange={(e) => setData(e.target.value)} className="int" placeholder="comment.." value={data} />
+  <input onChange={(e) => setDocs(e.target.value)} className='inpt' placeholder="name.." value={info} />
     <button  className='btn'
         type="submit" 
         > Add your comment</button>
@@ -77,16 +77,13 @@ function Fetch() {
   </div>
         
 {docs.map(doc => (
-          <p className='inputs' key={doc.id}>
-          {doc.Name} :  {doc.content}    
- </p>          
+          <ul className='inputs' key={doc.id}>
+         {doc.Name} : {doc.content}    
+ </ul>          
 ))}
 
    </>
-    
- 
-
- );
+  );
 }
 }
 

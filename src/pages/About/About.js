@@ -14,7 +14,7 @@ const About = () => {
           <h2>About</h2>
           <p>Search any book of your choice by inserting the title of the in the Search and wait for response.You can leave a comment
             below to help us improve
-            fuctionalities</p>
+            functionalities</p>
           
         </div>
 
