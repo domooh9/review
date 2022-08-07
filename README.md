@@ -25,7 +25,7 @@ There are two ways of running the App:
       Open [http://localhost:3000](http://localhost:3000) to view it in your browser directly.
       
 
-    2. Open the app using (https://ubiquitous-sunburst-3d759a.netlify.app/book) in your browser
+    2. Open the app using (https://ubiquitous-sunburst-3d759a.netlify.app/book) or (https://bookk-review-app.herokuapp.com/book) in your browser.
 
 ## Technologies used
  
